@@ -42,13 +42,13 @@ const page = () => {
 
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            <img src="img/craveGallery-Logo.png" className="h-14" />
+            <img src="/img/craveGallery-Logo.png" className="h-14" />
           </NavbarBrand>
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-5" justify="start">
           <NavbarBrand>
-            <img src="img/craveGallery-Logo.png" className="h-14" />
+            <img src="/img/craveGallery-Logo.png" className="h-14" />
           </NavbarBrand>
         </NavbarContent>
 
