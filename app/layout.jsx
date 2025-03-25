@@ -2,7 +2,7 @@ import "@/style/style.css";
 
 export const metadata = {
   title: "Crave Gallery",
-  description: "Created by HILILK",
+  description: "Created by Hirusha-Liyanage",
 };
 
 export default function RootLayout({ children }) {
