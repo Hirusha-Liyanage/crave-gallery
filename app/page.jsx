@@ -42,13 +42,13 @@ const page = () => {
 
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
-            <img src="/img/craveGallery-Logo.png" className="h-14" />
+            <img src="/img/CraveGallery-Logo.png" className="h-14" />
           </NavbarBrand>
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-5" justify="start">
           <NavbarBrand>
-            <img src="/img/craveGallery-Logo.png" className="h-14" />
+            <img src="/img/CraveGallery-Logo.png" className="h-14" />
           </NavbarBrand>
         </NavbarContent>
 
@@ -737,7 +737,7 @@ const page = () => {
         </div>
         <footer className="w-full bottom-0 flex items-center flex-col mt-20 bg-black bg-opacity-5 footer p-10">
           <label className="text-2xl font-bold flex items-center">
-            <img src="/img/CraveGallery-logo.png" className="h-20" />
+            <img src="/img/CraveGallery-Logo.png" className="h-20" />
           </label>
           <div className="w-full flex justify-center gap-3 mt-5 mb-5 flex-wrap">
             <a className="cursor-pointer font-bold text-lg" href="#home">
