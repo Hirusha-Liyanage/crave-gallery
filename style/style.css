@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Signika Negative";
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar:hover {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #07050a;
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190);
+  border-radius: 1rem;
+}
+
+.btns {
+  background: -webkit-linear-gradient(45deg, #ac3c5a, #944ce6);
+  color: white;
+}
+
+.typing-text {
+  background: -webkit-linear-gradient(
+    45deg,
+    #f47165,
+    #ed91d6,
+    #b1bdf3,
+    #76dde9
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-home {
+  background: #1a0930a9;
+  height: 100vh;
+}
+
+:root {
+  --secondary-glow: conic-gradient(
+    from 10deg at 10% 10%,
+    #1b1824 0deg,
+    #31214e 55deg,
+    #340e4d 120deg,
+    #231b31 160deg,
+    #321c35 300deg,
+    transparent 360deg
+  );
+
+  --third-glow: conic-gradient(
+    from 90deg at 20% 10%,
+    #362148 0deg,
+    #370946 55deg,
+    #4d0d5a 120deg,
+    #420f49 160deg,
+    #3e1d38 300deg,
+    transparent 360deg
+  );
+}
+
+.bg-gradient::before,
+.bg-gradient::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.bg-gradient::before {
+  background: var(--third-glow);
+  border-radius: 50%;
+  width: 50%;
+  height: 80%;
+  margin-left: -200px;
+  filter: blur(90px);
+  top: calc(50vh - 50vw / 3);
+  left: calc(55vw);
+  bottom: calc(50vh - 50vw / 1);
+}
+
+.bg-gradient::after {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 30%;
+  height: 50%;
+  filter: blur(90px);
+  top: calc(50vh - 50vw / 2);
+  left: calc(50vw - 50vw / 1);
+}
+
+@keyframes animateBefore {
+  0% {
+    transform: translateY(-40%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes animateAfter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bg-gradient::before {
+  animation: animateBefore 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+.bg-gradient::after {
+  animation: animateAfter 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
