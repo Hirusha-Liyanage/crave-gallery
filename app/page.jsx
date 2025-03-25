@@ -735,7 +735,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <footer className="w-full bottom-0 flex items-center flex-col mt-20 bg-black bg-opacity-5 footer p-10">
+        <footer className="w-full bottom-0 flex items-center flex-col mt-20 bg-black bg-opacity-5 footer p-10 z-10">
           <label className="text-2xl font-bold flex items-center">
             <img src="/img/CraveGallery-Logo.png" className="h-20" />
           </label>
