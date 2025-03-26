@@ -535,7 +535,7 @@ const page = () => {
                   Wedding Cake
                 </label>
                 <p className="text-md text-stone-400">
-                  Starting From LKR. 1500 according to preferences
+                  According to preferences
                 </p>
                 <Button
                   className="w-full lg:w-2/4 mt-5 rounded-full"
@@ -566,7 +566,7 @@ const page = () => {
                   Birthday Cake
                 </label>
                 <p className="text-md text-stone-400">
-                  Starting From LKR. 1500 according to preferences
+                  According to preferences
                 </p>
                 <Button
                   className="w-full lg:w-2/4 mt-5 rounded-full"
