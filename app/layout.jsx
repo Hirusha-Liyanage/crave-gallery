@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
+        <meta name="google-site-verification" content="W6gR9yQqlB9ewyA4Sco_N6gBDq1G43uSNwe5bwQm2qg" />
         <style>
           @import
           url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&display=swap');
